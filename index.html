@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>A visual integral calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="plotly-latest.min.js"></script>
+    </head>
+    <body>
+        <h1 id="title">A visual integral calculator <span>(but not very efficient)</span></h1>
+        <div id="function_definition">
+            <label for="input_function"> f(x) = </label>
+            <input type="text" id="input_function" name="input_function" size="20">
+            <label for="a">a = </label>
+            <input type="text" id="a" name="a" size="1">
+            <label for="b">b = </label>
+            <input type="text" id="b" name="b" size="1">
+            <input type="submit" value="VALIDATE" onclick="validate()"></input>
+            <a href="howtouse.html">How to use ?</a>
+        </div>
+        <div id="result">
+            <button type="button" onclick="reset()">RESET</button>
+            <button type="button" onclick="startAnimation()">START ANIMATION</button>
+            <button type="button" onclick="stopAnimation()">STOP ANIMATION</button>
+            <div id="chart"></div>
+            <button type="button" onclick="previousIteration()">PREVIOUS ITERATION</button>
+            <button type="button" onclick="nextIteration()">NEXT ITERATION</button>
+            <p>Current iteration (power of 2 rectangles) : <span id="iteration"></span></p>
+            <p>Estimated area : <span id="area"></span></p>
+        </div>
+        <div id="footer">
+            <a href="https://plotly.com/javascript/">Made using Plotly</a></p>
+            <a href="https://github.com/remigerme">Github's link</a>
+        </div>
+        <script src="calc.js"></script>
+    </body>
+</html>

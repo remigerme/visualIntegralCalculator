@@ -1,0 +1,49 @@
+body {
+    background-color: #44423E;
+    color: white;
+    font-family: "Comic Sans MS";
+}
+
+#title {
+    text-align: center;
+    font-size: 40px;
+}
+
+#title > span {
+    font-size: 20px;
+}
+
+#function_definition, #result, #footer {
+    margin: 0 auto;
+    width: 90%;
+}
+
+input[type=submit] {
+    background-color: #44423E;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    padding: 5px 5px 5px 5px;
+}
+
+button {
+    background-color: #44423E;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px 15px 15px 15px;
+}
+
+button:hover, input[type=submit]:hover {
+    background-color: #373532;
+    border-color: white;
+    color: white;
+    cursor: pointer;
+}
+
+a {
+    color: #89A7AB;
+    text-decoration: none;
+}
