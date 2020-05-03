@@ -23,7 +23,17 @@ function validate() {
     }
 
 function f(x) {
-    return eval(func.replace("x", x));
+    var toEval = "";
+    var previousCharacter = "";
+    for(const char of func) {
+        if(char == "x" && previousCharacter != "e") {
+            toEval += x;
+        } else {
+            toEval += char;
+        }
+        previousCharacter = char;
+    }
+    return eval(toEval);
 }
 
 function previousIteration() {
